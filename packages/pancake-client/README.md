@@ -1,13 +1,13 @@
-# @hoanghuydev/pancake-client
+# pancake-client
 
 SDK TypeScript không chính thức cho [Pancake REST API](https://developer.pancake.biz/). Hỗ trợ 32 HTTP operations; webhook không nằm trong package.
 
 ```bash
-npm install @hoanghuydev/pancake-client
+npm install pancake-client
 ```
 
 ```ts
-import { PancakeClient } from '@hoanghuydev/pancake-client'
+import { PancakeClient } from 'pancake-client'
 
 const page = new PancakeClient({
   pageId: process.env.PANCAKE_PAGE_ID,

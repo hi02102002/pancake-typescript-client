@@ -23,7 +23,7 @@ Package nằm ở `packages/pancake-client`. Bản build ESM và TypeScript decl
 ## Sử dụng
 
 ```ts
-import { PancakeClient } from '@hoanghuydev/pancake-client'
+import { PancakeClient } from 'pancake-client'
 
 // API cấp tài khoản: dùng User Access Token.
 const account = new PancakeClient({ accessToken: process.env.PANCAKE_ACCESS_TOKEN })
