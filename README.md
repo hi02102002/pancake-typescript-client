@@ -18,7 +18,7 @@ bun test
 bun run build
 ```
 
-Package nằm ở `packages/pancake-client`. Bản build ESM và TypeScript declarations nằm trong `packages/pancake-client/dist`. Package không có dependency khi chạy. Repo hiện được đăng trên GitHub, chưa phát hành lên npm.
+Package nằm ở `packages/pancake-client`. Bản build ESM và TypeScript declarations nằm trong `packages/pancake-client/dist`. Package không có dependency khi chạy. Bản phát hành có trên [npm](https://www.npmjs.com/package/pancake-client).
 
 ## Sử dụng
 
@@ -42,7 +42,7 @@ for await (const response of page.conversations.iterate({})) {
 }
 ```
 
-Trong repo này, package được khai báo là Bun workspace. Ứng dụng khác có thể dùng bản build sau khi đóng gói hoặc liên kết package bằng workspace; hiện chưa có bản npm để chạy `bun add` theo tên package.
+Trong repo này, package được khai báo là Bun workspace. Để dùng trong ứng dụng khác, chạy `bun add pancake-client` hoặc `npm install pancake-client`.
 
 ## Cấu hình
 
