@@ -1,5 +1,5 @@
 {
-  "name": "@hi02102002/pancake-client",
+  "name": "@hoanghuydev/pancake-client",
   "version": "0.1.0",
   "description": "Unofficial, typed ESM client for the Pancake API",
   "repository": {
