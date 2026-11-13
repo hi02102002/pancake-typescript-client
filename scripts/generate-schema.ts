@@ -52,3 +52,25 @@ try {
 } finally {
   await rm(temporaryDirectory, { recursive: true, force: true });
 }
+
+const webhookSourcePath = resolve(
+  workspaceRoot,
+  "packages/pancake-client/openapi/webhook.yaml",
+);
+const webhookOutputPath = resolve(
+  workspaceRoot,
+  "packages/pancake-client/src/webhook/schema.ts",
+);
+const webhookProcess = Bun.spawn(
+  [
+    resolve(workspaceRoot, "node_modules/.bin/openapi-typescript"),
+    webhookSourcePath,
+    "--output",
+    webhookOutputPath,
+  ],
+  { cwd: workspaceRoot, stdout: "inherit", stderr: "inherit" },
+);
+const webhookExitCode = await webhookProcess.exited;
+if (webhookExitCode !== 0) {
+  throw new Error(`Webhook openapi-typescript exited with code ${webhookExitCode}`);
+}
