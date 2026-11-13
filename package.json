@@ -1,0 +1,17 @@
+{
+  "name": "pancake-sdk-workspace",
+  "private": true,
+  "packageManager": "bun@1.4.4",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "check": "bun run --filter '*' check",
+    "schema:generate": "bun run scripts/generate-schema.ts"
+  },
+  "devDependencies": {
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3"
+  }
+}

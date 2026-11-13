@@ -1,0 +1,28 @@
+{
+  "name": "@hi02102002/pancake-client",
+  "version": "0.1.0",
+  "description": "Unofficial, typed ESM client for the Pancake API",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "openapi/openapi.yaml"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --format esm --packages external && tsc -p tsconfig.build.json",
+    "check": "tsc -p tsconfig.json",
+    "schema:generate": "bun run ../../scripts/generate-schema.ts"
+  },
+  "devDependencies": {
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3"
+  }
+}
