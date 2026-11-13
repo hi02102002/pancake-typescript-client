@@ -7,7 +7,27 @@ SDK TypeScript **không chính thức** cho [Pancake REST API và Webhooks](http
 - Node.js 22+ hoặc Bun
 - Bun để cài dependencies và build từ mã nguồn
 
-## Cài đặt và build
+## Cài đặt
+
+Cài đặt package vào dự án của bạn:
+
+```bash
+# npm
+npm install pancake-client
+
+# pnpm
+pnpm add pancake-client
+
+# yarn
+yarn add pancake-client
+
+# bun
+bun add pancake-client
+```
+
+Bản phát hành chính thức có sẵn trên [npm](https://www.npmjs.com/package/pancake-client). Package hoạt động với Node.js 22+ và Bun, không có dependency khi chạy (zero runtime dependencies).
+
+## Phát triển từ mã nguồn
 
 ```bash
 git clone https://github.com/hi02102002/pancake-typescript-client.git
@@ -18,7 +38,7 @@ bun test
 bun run build
 ```
 
-Package nằm ở `packages/pancake-client`. Bản build ESM và TypeScript declarations nằm trong `packages/pancake-client/dist`. Package không có dependency khi chạy. Bản phát hành có trên [npm](https://www.npmjs.com/package/pancake-client).
+Package nằm ở `packages/pancake-client`. Bản build ESM và TypeScript declarations nằm trong `packages/pancake-client/dist`.
 
 ## Sử dụng REST API Client
 

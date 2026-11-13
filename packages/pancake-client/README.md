@@ -2,8 +2,20 @@
 
 SDK TypeScript không chính thức cho [Pancake REST API và Webhooks](https://developer.pancake.biz/). Hỗ trợ 32 HTTP operations và đầy đủ typed webhook events theo OpenAPI chính thức; không có dependency khi chạy (zero runtime dependencies).
 
+## Cài đặt
+
 ```bash
+# npm
 npm install pancake-client
+
+# pnpm
+pnpm add pancake-client
+
+# yarn
+yarn add pancake-client
+
+# bun
+bun add pancake-client
 ```
 
 ## REST API Client
